@@ -53,27 +53,68 @@
 
             function init(){
                 myMap = new ymaps.Map ("map", {
-                    center: [55.76, 37.64],
-                    zoom: 7,
+                    center: [56.016930,92.858022],
+                    zoom: 11,
                 });
+
+
+                myPlacemark = new ymaps.Placemark([55.980852,92.866303], {
+                    // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                    balloonContentHeader: "Правый берег",
+                    balloonContentBody:  "ул. Свердловская 15<br>"+
+                            "т. 233-55-00<br>т. 261-61-78<br>"
+                            ,
+                    balloonContentFooter: "Режим работы:<br>"+
+                            "Пн-Пт с 9:00 до 19:00<br>"                +
+                            "Сб-Вс с 9:00 до 17:00<br>"
+//                    hintContent: "Хинт"
+                });
+                myPlacemark1 = new ymaps.Placemark([56.052108, 92.836517], {
+                    // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                    balloonContentHeader: "Левый берег",
+                    balloonContentBody:  "п.Солонцы<br>"+
+                    "пр. Котельникова 9, строение 1<br>"+
+                "Парковка ТК \"Сибирский городок\"<br>(Бывший АлпиСити)<br>" +
+                            "т. 208-51-51"
+                    ,
+                    balloonContentFooter: "Режим работы:<br>"+
+                            "Ежедневно с 9:00 до 20:00<br>"
+
+//                    hintContent: "Хинт"
+                });
+
+                myMap.geoObjects.add(myPlacemark1);
+
+                myMap.geoObjects.add(myPlacemark);
+
+
+                myMap.controls.add('zoomControl');
+//                myMap.balloon.open([55.980852,92.866303], "<b>Правый берег</b><br>" +
+//                       +
+//                "Пн-Пт с 9:00 до 19:00<br>"                +
+//                "Сб-Вс с 9:00 до 17:00<br>", {
+//                    // Опция: не показываем кнопку закрытия.
+//                    closeButton: false
+//                });
             }
         </script>
     </div>
     <div class="large-4 columns">
         <ul class="vcard">
             <li><strong>Левый берег:</strong></li>
-            <li class="street-address">ул. Менжинского 18</li>
-            <li class="phone">т. 222-42-42</li>
-            <li class="worktime">Ежедневно с 11:00 до 19:00</li>
+            <li class="street-address">п.Солонцы,<br> пр.Котельникова 9 строение 1<br>Парковка ТК "Сибирский городок" бывший АлпиСити</li>
+            <li class="phone">т. 208-51-51</li>
+            <li class="worktime">Пн-Вс с 9:00 до 20:00</li>
             <hr>
             <li><strong>Правый берег:</strong></li>
-            <li class="street-address">ул. Менжинского 18</li>
-            <li class="phone">т. 222-42-42</li>
-            <li class="worktime">Ежедневно с 11:00 до 19:00</li>
-            <hr>
-            <li class="fn org">ООО "Азазаз"</li>
-            <li class="locality">г. Красноярск</li>
-            <li class="email"><a href="#">g.baltar@cmail.com</a></li>
+            <li class="street-address">ул. Свердловская 15</li>
+            <li class="phone">т. 233-55-00<br> т. 261-61-78</li>
+            <li class="worktime">Пн-Пт с 9:00 до 19:00</li>
+            <li class="worktime">Сб-Вс с 9:00 до 17:00</li>
+            <!--<hr>-->
+            <!--<li class="fn org">ООО "Азазаз"</li>-->
+            <!--<li class="locality">г. Красноярск</li>-->
+            <!--<li class="email"><a href="#">g.baltar@cmail.com</a></li>-->
         </ul>
     </div>
 </div>
