@@ -10,74 +10,76 @@
     <title>СуперЛист.рф - Изготовление и реализация профилированого поликарбоната в городе Красноярске.</title>
     <link rel="stylesheet" href="scss/normalize.css"/>
     <link rel="stylesheet" href="scss/foundation.css"/>
-    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"
+            type="text/javascript"></script>
     <script src="js/vendor/custom.modernizr.js"></script>
 
 </head>
 <body>
 <div class="head_bg">
-<div style="" class="head">
-    <div class="row">
-        <div class="large-4 columns text-center">
-            <h2>СуперЛист.рф</h2>
-        </div>
-        <div class="large-4 columns text-center">
-            <h5>Профилированный поликорбанат в Красноярске</h5>
-        </div>
-        <div class="large-4 columns text-center">
-            <h2>т. 208-51-51</h2>
+    <div style="" class="head">
+        <div class="row">
+            <div class="large-4 columns text-center">
+                <h2>СуперЛист.рф</h2>
+            </div>
+            <div class="large-4 columns text-center">
+                <h5>Профилированный поликорбанат в Красноярске</h5>
+            </div>
+            <div class="large-4 columns text-center">
+                <h2>т. 208-51-51</h2>
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 <div class="info">
-<div class="row">
-    <div class="large-6 columns">
-        <img src="./img/photo-of-sheets.jpg">
+    <div class="row">
+        <div class="large-6 columns">
+            <img src="./img/photo-of-sheets.jpg">
+        </div>
+        <div class="large-6 columns">
+            <h4>О профилированном поликарбонате</h4>
+
+            <p class="text-justify">Профилированный поликарбонат - лист, который сочетает в себе самые желанные
+                качества, необходимые для кровельного, фасадного или облицовочного материала. Он практичный, красивый и
+                к тому же доступный в сравнении с другими строительными материалами.</p>
+        </div>
     </div>
-    <div class="large-6 columns">
-        <h4>О профилированном поликарбонате</h4>
-        <p class="text-justify">Профилированный поликарбонат - лист, который сочетает в себе самые желанные качества, необходимые для кровельного, фасадного или облицовочного материала. Он практичный, красивый и к тому же доступный в сравнении с другими строительными материалами.</p>
-    </div>
-</div>
 </div>
 <hr>
 
 <div class="row">
-    <div class="large-8 columns">
+    <div class="large-12 columns">
         <div id="map" style="width: 100%; height: 400px"></div>
         <script type="text/javascript">
             ymaps.ready(init);
             var myMap;
 
-            function init(){
-                myMap = new ymaps.Map ("map", {
-                    center: [56.016930,92.858022],
+            function init() {
+                myMap = new ymaps.Map("map", {
+                    center: [56.016930, 92.858022],
                     zoom: 11,
                 });
 
 
-                myPlacemark = new ymaps.Placemark([55.980852,92.866303], {
+                myPlacemark = new ymaps.Placemark([55.980852, 92.866303], {
                     // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
                     balloonContentHeader: "Правый берег",
-                    balloonContentBody:  "ул. Свердловская 15<br>"+
-                            "т. 233-55-00<br>т. 261-61-78<br>"
-                            ,
-                    balloonContentFooter: "Режим работы:<br>"+
-                            "Пн-Пт с 9:00 до 19:00<br>"                +
+                    balloonContentBody: "ул. Свердловская 15<br>" +
+                            "т. 233-55-00<br>т. 261-61-78<br>",
+                    balloonContentFooter: "Режим работы:<br>" +
+                            "Пн-Пт с 9:00 до 19:00<br>" +
                             "Сб-Вс с 9:00 до 17:00<br>"
 //                    hintContent: "Хинт"
                 });
                 myPlacemark1 = new ymaps.Placemark([56.052108, 92.836517], {
                     // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
                     balloonContentHeader: "Левый берег",
-                    balloonContentBody:  "п.Солонцы<br>"+
-                    "пр. Котельникова 9, строение 1<br>"+
-                "Парковка ТК \"Сибирский городок\"<br>(Бывший АлпиСити)<br>" +
-                            "т. 208-51-51"
-                    ,
-                    balloonContentFooter: "Режим работы:<br>"+
+                    balloonContentBody: "п.Солонцы<br>" +
+                            "пр. Котельникова 9, строение 1<br>" +
+                            "Парковка ТК \"Сибирский городок\"<br>(Бывший АлпиСити)<br>" +
+                            "т. 208-51-51",
+                    balloonContentFooter: "Режим работы:<br>" +
                             "Ежедневно с 9:00 до 20:00<br>"
 
 //                    hintContent: "Хинт"
@@ -99,23 +101,33 @@
             }
         </script>
     </div>
-    <div class="large-4 columns">
-        <ul class="vcard">
-            <li><strong>Левый берег:</strong></li>
-            <li class="street-address">п.Солонцы,<br> пр.Котельникова 9 строение 1<br>Парковка ТК "Сибирский городок" бывший АлпиСити</li>
-            <li class="phone">т. 208-51-51</li>
-            <li class="worktime">Пн-Вс с 9:00 до 20:00</li>
-            <hr>
-            <li><strong>Правый берег:</strong></li>
-            <li class="street-address">ул. Свердловская 15</li>
-            <li class="phone">т. 233-55-00<br> т. 261-61-78</li>
-            <li class="worktime">Пн-Пт с 9:00 до 19:00</li>
-            <li class="worktime">Сб-Вс с 9:00 до 17:00</li>
-            <!--<hr>-->
-            <!--<li class="fn org">ООО "Азазаз"</li>-->
-            <!--<li class="locality">г. Красноярск</li>-->
-            <!--<li class="email"><a href="#">g.baltar@cmail.com</a></li>-->
-        </ul>
+    <div class="large-12 columns">
+        <div class="vcard-block">
+            <div class="row">
+                <div class="large-6 columns">
+                    <ul class="vcard">
+                        <li><strong>Левый берег:</strong></li>
+                        <li class="street-address">п.Солонцы,<br> пр.Котельникова 9 строение 1<br>Парковка ТК "Сибирский
+                            городок" бывший АлпиСити
+                        </li>
+                        <li class="phone">т. 208-51-51</li>
+                        <li class="worktime">Пн-Вс с 9:00 до 20:00</li>
+                        <!--<hr>-->
+                    </ul>
+                </div>
+                <div class="large-6 columns">
+
+                    <ul class="vcard">
+
+                        <li><strong>Правый берег:</strong></li>
+                        <li class="street-address">ул. Свердловская 15</li>
+                        <li class="phone">т. 233-55-00<br> т. 261-61-78</li>
+                        <li class="worktime">Пн-Пт с 9:00 до 19:00</li>
+                        <li class="worktime">Сб-Вс с 9:00 до 17:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
