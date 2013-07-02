@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a710d16c-da26-46ca-a63b-fa2e79844161" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="super-list.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="a710d16c-da26-46ca-a63b-fa2e79844161" time="1372753556629" ignored="false" />
-    <file path="/index.html" changelist="a710d16c-da26-46ca-a63b-fa2e79844161" time="1372755852155" ignored="false" />
+    <file path="/index.html" changelist="a710d16c-da26-46ca-a63b-fa2e79844161" time="1372756816813" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="118" selection-start="4136" selection-end="4136" vertical-scroll-proportion="0.31338027">
+            <state line="39" column="29" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.39612675">
               <folding />
             </state>
           </provider>
@@ -70,6 +69,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
     <option name="y" value="22" />
     <option name="width" value="960" />
     <option name="height" value="1174" />
@@ -173,7 +173,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="960" height="1174" extended-state="0" />
+    <frame x="960" y="22" width="960" height="1174" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -271,7 +271,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="118" selection-start="4136" selection-end="4136" vertical-scroll-proportion="0.31338027">
+        <state line="39" column="29" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.39612675">
           <folding />
         </state>
       </provider>
