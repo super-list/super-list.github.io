@@ -4283,12 +4283,15 @@ a.th {
 .menu {
   padding: 0px 0px 10px; }
 
-.head h2, .head h5 {
+.head h3 {
+  padding: 10px 0; }
+
+.head h3, .head h5, .head h2 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
   color: #ffffff; }
 
 .head h5 {
-  padding-top: 10px; }
+  padding-top: 5px; }
 
 .img-block img {
   margin-bottom: 20px;
