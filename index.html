@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="scss/foundation.css"/>
     <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"
             type="text/javascript"></script>
-    <script src="js/vendor/custom.modernizr.js"></script>
+    <!--<script src="js/vendor/custom.modernizr.js"></script>-->
 
 </head>
 <body>
@@ -46,51 +46,114 @@
         </div>
     </div>
 </div>
-<hr>
 
-<div class="row">
-    <div class="large-12 columns">
-        <div id="map" style="width: 100%; height: 400px"></div>
-        <script type="text/javascript">
-            ymaps.ready(init);
-            var myMap;
-
-            function init() {
-                myMap = new ymaps.Map("map", {
-                    center: [56.016930, 92.858022],
-                    zoom: 11,
-                });
+<div class="cost">
+    <div class="row text-center">
+        <div class="large-12 columns">
 
 
-                myPlacemark = new ymaps.Placemark([55.980852, 92.866303], {
-                    // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
-                    balloonContentHeader: "Правый берег",
-                    balloonContentBody: "ул. Свердловская 15<br>" +
-                            "т. 233-55-00<br>т. 261-61-78<br>",
-                    balloonContentFooter: "Режим работы:<br>" +
-                            "Пн-Пт с 9:00 до 19:00<br>" +
-                            "Сб-Вс с 9:00 до 17:00<br>"
+            <div class="large-12 columns">
+                <div class="row">
+                    <div class="cost-name">
+                        <div class="large-12">
+                            <h3 class="">Кровельный волнистый монолистный поликарбонат</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cost-title">
+                        <div class="large-4 columns">
+                            <h3>ПРОЗРАЧНЫЙ</h3>
+                        </div>
+                        <div class="large-4 columns">
+                            <h3>МАТОВЫЙ</h3>
+
+                            <p>Зеленый, синий, бронза</p>
+                        </div>
+                        <div class="large-4 columns">
+                            <h3>ГЛЯНЕЦ</h3>
+
+                            <p>Бронза, зеленый, синий, бордовый, желтый, бирюза, оранжевый</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cost-size">
+                        <div class="large-4 columns">
+                            <h3>1,05м*2м</h3>
+
+                        </div>
+                        <div class="large-4 columns">
+                            <h3>1,05м*2м</h3>
+                        </div>
+                        <div class="large-4 columns">
+                            <h3>1,05м*2м</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cost-price">
+                        <div class="large-4 columns">
+                            <h3>449 руб.</h3>
+
+                        </div>
+                        <div class="large-4 columns">
+                            <h3>499 руб.</h3>
+                        </div>
+                        <div class="large-4 columns">
+                            <h3>499 руб.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map">
+    <div class="row">
+        <div class="large-12 columns">
+            <div style="width: 100%; height: 400px"></div>
+            <script type="text/javascript">
+                ymaps.ready(init);
+                var myMap;
+
+                function init() {
+                    myMap = new ymaps.Map("map", {
+                        center: [56.016930, 92.858022],
+                        zoom: 11
+                    });
+
+
+                    myPlacemark = new ymaps.Placemark([55.980852, 92.866303], {
+                        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                        balloonContentHeader: "Правый берег",
+                        balloonContentBody: "ул. Свердловская 15<br>" +
+                                "т. 233-55-00<br>т. 261-61-78<br>",
+                        balloonContentFooter: "Режим работы:<br>" +
+                                "Пн-Пт с 9:00 до 19:00<br>" +
+                                "Сб-Вс с 9:00 до 17:00<br>"
 //                    hintContent: "Хинт"
-                });
-                myPlacemark1 = new ymaps.Placemark([56.052108, 92.836517], {
-                    // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
-                    balloonContentHeader: "Левый берег",
-                    balloonContentBody: "п.Солонцы<br>" +
-                            "пр. Котельникова 9, строение 1<br>" +
-                            "Парковка ТК \"Сибирский городок\"<br>(Бывший АлпиСити)<br>" +
-                            "т. 208-51-51",
-                    balloonContentFooter: "Режим работы:<br>" +
-                            "Ежедневно с 9:00 до 20:00<br>"
+                    });
+                    myPlacemark1 = new ymaps.Placemark([56.052108, 92.836517], {
+                        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                        balloonContentHeader: "Левый берег",
+                        balloonContentBody: "п.Солонцы<br>" +
+                                "пр. Котельникова 9, строение 1<br>" +
+                                "Парковка ТК \"Сибирский городок\"<br>(Бывший АлпиСити)<br>" +
+                                "т. 208-51-51",
+                        balloonContentFooter: "Режим работы:<br>" +
+                                "Ежедневно с 9:00 до 20:00<br>"
 
 //                    hintContent: "Хинт"
-                });
+                    });
 
-                myMap.geoObjects.add(myPlacemark1);
+                    myMap.geoObjects.add(myPlacemark1);
 
-                myMap.geoObjects.add(myPlacemark);
+                    myMap.geoObjects.add(myPlacemark);
 
 
-                myMap.controls.add('zoomControl');
+                    myMap.controls.add('zoomControl');
 //                myMap.balloon.open([55.980852,92.866303], "<b>Правый берег</b><br>" +
 //                       +
 //                "Пн-Пт с 9:00 до 19:00<br>"                +
@@ -98,39 +161,40 @@
 //                    // Опция: не показываем кнопку закрытия.
 //                    closeButton: false
 //                });
-            }
-        </script>
-    </div>
-    <div class="large-12 columns">
-        <div class="vcard-block">
-            <div class="row">
-                <div class="large-6 columns">
-                    <ul class="vcard">
-                        <li><strong>Левый берег:</strong></li>
-                        <li class="street-address">п.Солонцы,<br> пр.Котельникова 9 строение 1<br>Парковка ТК "Сибирский
-                            городок" бывший АлпиСити
-                        </li>
-                        <li class="phone">т. 208-51-51</li>
-                        <li class="worktime">Пн-Вс с 9:00 до 20:00</li>
-                        <!--<hr>-->
-                    </ul>
-                </div>
-                <div class="large-6 columns">
+                }
+            </script>
+        </div>
+        <div class="large-12 columns">
+            <div class="vcard-block">
+                <div class="row">
+                    <div class="large-6 columns">
+                        <ul class="vcard">
+                            <li><strong>Левый берег:</strong></li>
+                            <li class="street-address">п.Солонцы,<br> пр.Котельникова 9 строение 1<br>Парковка ТК
+                                "Сибирский
+                                городок" бывший АлпиСити
+                            </li>
+                            <li class="phone">т. 208-51-51</li>
+                            <li class="worktime">Пн-Вс с 9:00 до 20:00</li>
+                            <!--<hr>-->
+                        </ul>
+                    </div>
+                    <div class="large-6 columns">
 
-                    <ul class="vcard">
+                        <ul class="vcard">
 
-                        <li><strong>Правый берег:</strong></li>
-                        <li class="street-address">ул. Свердловская 15</li>
-                        <li class="phone">т. 233-55-00<br> т. 261-61-78</li>
-                        <li class="worktime">Пн-Пт с 9:00 до 19:00</li>
-                        <li class="worktime">Сб-Вс с 9:00 до 17:00</li>
-                    </ul>
+                            <li><strong>Правый берег:</strong></li>
+                            <li class="street-address">ул. Свердловская 15</li>
+                            <li class="phone">т. 233-55-00<br> т. 261-61-78</li>
+                            <li class="worktime">Пн-Пт с 9:00 до 19:00</li>
+                            <li class="worktime">Сб-Вс с 9:00 до 17:00</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <hr>
 <div class="row">
     <div class="large-12 columns text-center" style="padding-bottom: 20px;">
@@ -144,28 +208,28 @@
 
 <!-- body content here -->
 
-<script>
-    document.write('<script src=' +
-            ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-            '.js><\/script>')
-</script>
-<script src="js/foundation/foundation.js"></script>
-<script src="js/foundation/foundation.alerts.js"></script>
-<script src="js/foundation/foundation.clearing.js"></script>
-<script src="js/foundation/foundation.cookie.js"></script>
-<script src="js/foundation/foundation.dropdown.js"></script>
-<script src="js/foundation/foundation.forms.js"></script>
-<script src="js/foundation/foundation.joyride.js"></script>
-<script src="js/foundation/foundation.magellan.js"></script>
-<script src="js/foundation/foundation.orbit.js"></script>
-<script src="js/foundation/foundation.placeholder.js"></script>
-<script src="js/foundation/foundation.reveal.js"></script>
-<script src="js/foundation/foundation.section.js"></script>
-<script src="js/foundation/foundation.tooltips.js"></script>
-<script src="js/foundation/foundation.topbar.js"></script>
-<script src="js/foundation/foundation.interchange.js"></script>
-<script>
-    $(document).foundation();
-</script>
+<!--<script>-->
+<!--document.write('<script src=' +-->
+<!--('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +-->
+<!--'.js><\/script>')-->
+<!--</script>-->
+<!--<script src="js/foundation/foundation.js"></script>-->
+<!--<script src="js/foundation/foundation.alerts.js"></script>-->
+<!--<script src="js/foundation/foundation.clearing.js"></script>-->
+<!--<script src="js/foundation/foundation.cookie.js"></script>-->
+<!--<script src="js/foundation/foundation.dropdown.js"></script>-->
+<!--<script src="js/foundation/foundation.forms.js"></script>-->
+<!--<script src="js/foundation/foundation.joyride.js"></script>-->
+<!--<script src="js/foundation/foundation.magellan.js"></script>-->
+<!--<script src="js/foundation/foundation.orbit.js"></script>-->
+<!--<script src="js/foundation/foundation.placeholder.js"></script>-->
+<!--<script src="js/foundation/foundation.reveal.js"></script>-->
+<!--<script src="js/foundation/foundation.section.js"></script>-->
+<!--<script src="js/foundation/foundation.tooltips.js"></script>-->
+<!--<script src="js/foundation/foundation.topbar.js"></script>-->
+<!--<script src="js/foundation/foundation.interchange.js"></script>-->
+<!--<script>-->
+<!--$(document).foundation();-->
+<!--</script>-->
 </body>
 </html>
