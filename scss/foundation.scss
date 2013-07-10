@@ -4,7 +4,9 @@
 // This includes all of the foundation global elements that are needed to work with any of the other files.
 @import "foundation/variables";
 // Foundation Components
-@import "foundation/components/global", "foundation/components/grid", "foundation/components/visibility", "foundation/components/block-grid", "foundation/components/type", "foundation/components/buttons", "foundation/components/forms", "foundation/components/custom-forms", "foundation/components/button-groups", "foundation/components/dropdown-buttons", "foundation/components/split-buttons", "foundation/components/flex-video", "foundation/components/section", "foundation/components/top-bar", "foundation/components/orbit", "foundation/components/reveal", "foundation/components/joyride", "foundation/components/clearing", "foundation/components/alert-boxes", "foundation/components/breadcrumbs", "foundation/components/keystrokes", "foundation/components/labels", "foundation/components/inline-lists", "foundation/components/pagination", "foundation/components/panels", "foundation/components/pricing-tables", "foundation/components/progress-bars", "foundation/components/side-nav", "foundation/components/sub-nav", "foundation/components/switch", "foundation/components/magellan", "foundation/components/tables", "foundation/components/thumbs", "foundation/components/tooltips", "foundation/components/dropdown";
+@import "foundation/components/global",
+"foundation/components/grid",
+"foundation/components/visibility", "foundation/components/block-grid", "foundation/components/type", "foundation/components/buttons", "foundation/components/forms", "foundation/components/custom-forms", "foundation/components/button-groups", "foundation/components/dropdown-buttons", "foundation/components/split-buttons", "foundation/components/flex-video", "foundation/components/section", "foundation/components/top-bar", "foundation/components/orbit", "foundation/components/reveal", "foundation/components/joyride", "foundation/components/clearing", "foundation/components/alert-boxes", "foundation/components/breadcrumbs", "foundation/components/keystrokes", "foundation/components/labels", "foundation/components/inline-lists", "foundation/components/pagination", "foundation/components/panels", "foundation/components/pricing-tables", "foundation/components/progress-bars", "foundation/components/side-nav", "foundation/components/sub-nav", "foundation/components/switch", "foundation/components/magellan", "foundation/components/tables", "foundation/components/thumbs", "foundation/components/tooltips", "foundation/components/dropdown";
 
 .head_bg {
   height: 300px;
@@ -81,7 +83,7 @@
   border: none;
 }
 
-.vcard-block{
+.vcard-block {
   //overflow: hidden;
   //max-width: 62.5em; //
   //padding: -10px;
@@ -90,26 +92,37 @@
 }
 
 .cost {
+  .cost-inner {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  padding: 20px 0;
   position: relative;
   z-index: 500;
-  background: url("../img/fabric_of_squares_gray.png");
-  .cost-name{
+  background: url("../img/bg.png");
+  //background: #bdecfb;
+  .cost-name {
     overflow: hidden;
-    background: rgba(#ADD8E6, 0.45);
+    background: rgba(255, 255, 255, 0.75);
+
   }
   //background: rgba(#ADD8E6, 0.45);
   .cost-title {
     overflow: hidden;
-    background: rgba(#ADD8E6, 0.75);
+    background: rgba(255, 255, 255, 0.95);
   }
   .cost-size {
     overflow: hidden;
-    background: rgba(#ADD8E6, 0.45);
+    background: rgba(255, 255, 255, 0.75);
   }
   .cost-price {
     overflow: hidden;
-    background: rgba(#ADD8E6, 0.75);
+    background: rgba(255, 255, 255, 0.95);
+
   }
 }
 
-// //
+//         //
+// //                   //

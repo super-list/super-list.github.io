@@ -4324,18 +4324,23 @@ a.th {
   border: 1px solid #dddddd; }
 
 .cost {
+  padding: 20px 0;
   position: relative;
   z-index: 500;
-  background: url("../img/fabric_of_squares_gray.png"); }
+  background: url("../img/bg.png"); }
+  .cost .cost-inner {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+    border-radius: 4px;
+    overflow: hidden; }
   .cost .cost-name {
     overflow: hidden;
-    background: rgba(173, 216, 230, 0.45); }
+    background: rgba(255, 255, 255, 0.75); }
   .cost .cost-title {
     overflow: hidden;
-    background: rgba(173, 216, 230, 0.75); }
+    background: rgba(255, 255, 255, 0.95); }
   .cost .cost-size {
     overflow: hidden;
-    background: rgba(173, 216, 230, 0.45); }
+    background: rgba(255, 255, 255, 0.75); }
   .cost .cost-price {
     overflow: hidden;
-    background: rgba(173, 216, 230, 0.75); }
+    background: rgba(255, 255, 255, 0.95); }
