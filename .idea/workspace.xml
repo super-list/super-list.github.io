@@ -7,7 +7,7 @@
     <ignored path="super-list.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="a710d16c-da26-46ca-a63b-fa2e79844161" time="1373612415564" ignored="false" />
-    <file path="/index.html" changelist="a710d16c-da26-46ca-a63b-fa2e79844161" time="1373612445536" ignored="false" />
+    <file path="/index.html" changelist="a710d16c-da26-46ca-a63b-fa2e79844161" time="1373612676511" ignored="false" />
     <file path="/foundation.scss" changelist="a710d16c-da26-46ca-a63b-fa2e79844161" time="1373434966349" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="72" selection-start="2111" selection-end="2111" vertical-scroll-proportion="0.5460061">
+            <state line="73" column="69" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.33367038">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -503,7 +503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="72" selection-start="2111" selection-end="2111" vertical-scroll-proportion="0.5460061">
+        <state line="73" column="69" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.33367038">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
