@@ -4344,3 +4344,8 @@ a.th {
   .cost .cost-price {
     overflow: hidden;
     background: rgba(255, 255, 255, 0.95); }
+
+.img-circle {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35); }

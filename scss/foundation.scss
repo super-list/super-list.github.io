@@ -123,6 +123,11 @@
 
   }
 }
+.img-circle{
+  //width: 60%;
+  //margin: auto;
 
-//         //
-// //                   //
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 4px rgba(0,0,0,0.35);
+}
