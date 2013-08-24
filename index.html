@@ -220,11 +220,20 @@
 
 //                    hintContent: "Хинт"
                     });
+//                    92.957091%2C56.066811
+                    myPlacemark2 = new ymaps.Placemark([56.066811, 92.957091], {
+                        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                        balloonContentHeader: "Левый берег",
+                        balloonContentBody: "Ястынская 21<br>" +
 
+                                "т. 252-13-61",
+
+//                    hintContent: "Хинт"
+                    });
                     myMap.geoObjects.add(myPlacemark1);
 
                     myMap.geoObjects.add(myPlacemark);
-
+                    myMap.geoObjects.add(myPlacemark2);
 
                     myMap.controls.add('zoomControl');
 //                myMap.balloon.open([55.980852,92.866303], "<b>Правый берег</b><br>" +
@@ -240,7 +249,7 @@
         <div class="large-12 columns">
             <div class="vcard-block">
                 <div class="row">
-                    <div class="large-6 columns">
+                    <div class="large-4 columns">
                         <ul class="vcard">
                             <li><strong>Левый берег:</strong></li>
                             <li class="street-address">п.Солонцы,<br> пр.Котельникова 9 строение 1<br>Парковка ТК
@@ -252,7 +261,16 @@
                             <!--<hr>-->
                         </ul>
                     </div>
-                    <div class="large-6 columns">
+                    <div class="large-4 columns">
+
+                        <ul class="vcard">
+                            <li><strong>Левый берег:</strong></li>
+                            <li class="street-address">Ястынская 21</li>
+                            <li class="phone">т. 252-13-61</li>
+
+                        </ul>
+                    </div>
+                    <div class="large-4 columns">
 
                         <ul class="vcard">
 
