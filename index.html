@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="scss/foundation.css"/>
     <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"
             type="text/javascript"></script>
-    <!--<script src="js/vendor/custom.modernizr.js"></script>-->
-
 </head>
 <body>
 <div class="head_bg">
@@ -53,11 +51,6 @@
     </div>
     <hr>
     <div class="row">
-        <!--<div class="large-4 columns">-->
-        <!--<h5>Волнистый монолитный поликарбонат</h5>-->
-        <!--<p class="text-justify">-->
-        <!--</p>-->
-        <!--</div>-->
         <div class="large-4 columns">
             <div class="text-center">
                 <img src="./img/poli.jpg" class="img-circle">
@@ -198,7 +191,7 @@
                     });
 
 
-                    myPlacemark = new ymaps.Placemark([55.980852, 92.866303], {
+                    myPlacemark1 = new ymaps.Placemark([55.980852, 92.866303], {
                         // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
                         balloonContentHeader: "Правый берег",
                         balloonContentBody: "ул. Свердловская 15<br>" +
@@ -208,7 +201,7 @@
                                 "Сб-Вс с 9:00 до 17:00<br>"
 //                    hintContent: "Хинт"
                     });
-                    myPlacemark1 = new ymaps.Placemark([56.052108, 92.836517], {
+                    myPlacemark2 = new ymaps.Placemark([56.052108, 92.836517], {
                         // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
                         balloonContentHeader: "Левый берег",
                         balloonContentBody: "п.Солонцы<br>" +
@@ -217,39 +210,43 @@
                                 "т. 208-51-51",
                         balloonContentFooter: "Режим работы:<br>" +
                                 "Ежедневно с 9:00 до 20:00<br>"
-
-//                    hintContent: "Хинт"
                     });
-//                    92.957091%2C56.066811
-                    myPlacemark2 = new ymaps.Placemark([56.066811, 92.957091], {
+
+                    myPlacemark3 = new ymaps.Placemark([56.057443, 92.835720], {
                         // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
                         balloonContentHeader: "Левый берег",
-                        balloonContentBody: "Ястынская 21<br>" +
-
-                                "т. 252-13-61",
-
-//                    hintContent: "Хинт"
+                        balloonContentBody: "п.Солонцы<br>" +
+                                "Котельникова 5в<br>" +
+                                "т. 280-00-85",
                     });
-                    myMap.geoObjects.add(myPlacemark1);
 
-                    myMap.geoObjects.add(myPlacemark);
+                    myPlacemark4 = new ymaps.Placemark([55.985203, 92.981394], {
+                        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                        balloonContentHeader: "Правый берег",
+                        balloonContentBody: "ул. Спортивная 60а/6<br>" +
+                                "т. 252-13-61",
+                    });
+
+
+
+                    // 92.835720%2C56.057443 - Котельникова
+                    // 92.835720%2C56.057443 - Спортивная
+                    // 92.981394%2C55.985203
+                    //  92.835720%2C56.057443
+                    //  92.982917%2C55.988752
+                    myMap.geoObjects.add(myPlacemark1);
                     myMap.geoObjects.add(myPlacemark2);
+                    myMap.geoObjects.add(myPlacemark3);
+                    myMap.geoObjects.add(myPlacemark4);
 
                     myMap.controls.add('zoomControl');
-//                myMap.balloon.open([55.980852,92.866303], "<b>Правый берег</b><br>" +
-//                       +
-//                "Пн-Пт с 9:00 до 19:00<br>"                +
-//                "Сб-Вс с 9:00 до 17:00<br>", {
-//                    // Опция: не показываем кнопку закрытия.
-//                    closeButton: false
-//                });
                 }
             </script>
         </div>
         <div class="large-12 columns">
             <div class="vcard-block">
                 <div class="row">
-                    <div class="large-4 columns">
+                    <div class="large-6 columns">
                         <ul class="vcard">
                             <li><strong>Левый берег:</strong></li>
                             <li class="street-address">п.Солонцы,<br> пр.Котельникова 9 строение 1<br>Парковка ТК
@@ -258,27 +255,29 @@
                             </li>
                             <li class="phone">т. 208-51-51</li>
                             <li class="worktime">Пн-Вс с 9:00 до 20:00</li>
-                            <!--<hr>-->
                         </ul>
                     </div>
-                    <div class="large-4 columns">
-
+                    <div class="large-6 columns">
                         <ul class="vcard">
-                            <li><strong>Левый берег:</strong></li>
-                            <li class="street-address">Ястынская 21</li>
-                            <li class="phone">т. 252-13-61</li>
-
+                            <li class="street-address">пр. Котельникова 5в</li>
+                            <li class="phone">т. 280-00-85</li>
                         </ul>
                     </div>
-                    <div class="large-4 columns">
-
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
                         <ul class="vcard">
-
                             <li><strong>Правый берег:</strong></li>
                             <li class="street-address">ул. Свердловская 15</li>
                             <li class="phone">т. 233-55-00<br> т. 261-61-78</li>
                             <li class="worktime">Пн-Пт с 9:00 до 19:00</li>
                             <li class="worktime">Сб-Вс с 9:00 до 17:00</li>
+                        </ul>
+                    </div>
+                    <div class="large-6 columns">
+                        <ul class="vcard">
+                            <li class="street-address">ул. Спортивная 60а/6</li>
+                            <li class="phone">т. 252-13-61</li>
                         </ul>
                     </div>
                 </div>
@@ -292,35 +291,5 @@
         Изготовление и реализация профилированого поликарбоната в городе Красноярске. т. 208-51-51.
     </div>
 </div>
-<style>
-
-</style>
-
-
-<!-- body content here -->
-
-<!--<script>-->
-<!--document.write('<script src=' +-->
-<!--('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +-->
-<!--'.js><\/script>')-->
-<!--</script>-->
-<!--<script src="js/foundation/foundation.js"></script>-->
-<!--<script src="js/foundation/foundation.alerts.js"></script>-->
-<!--<script src="js/foundation/foundation.clearing.js"></script>-->
-<!--<script src="js/foundation/foundation.cookie.js"></script>-->
-<!--<script src="js/foundation/foundation.dropdown.js"></script>-->
-<!--<script src="js/foundation/foundation.forms.js"></script>-->
-<!--<script src="js/foundation/foundation.joyride.js"></script>-->
-<!--<script src="js/foundation/foundation.magellan.js"></script>-->
-<!--<script src="js/foundation/foundation.orbit.js"></script>-->
-<!--<script src="js/foundation/foundation.placeholder.js"></script>-->
-<!--<script src="js/foundation/foundation.reveal.js"></script>-->
-<!--<script src="js/foundation/foundation.section.js"></script>-->
-<!--<script src="js/foundation/foundation.tooltips.js"></script>-->
-<!--<script src="js/foundation/foundation.topbar.js"></script>-->
-<!--<script src="js/foundation/foundation.interchange.js"></script>-->
-<!--<script>-->
-<!--$(document).foundation();-->
-<!--</script>-->
 </body>
 </html>
