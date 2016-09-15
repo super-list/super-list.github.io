@@ -197,17 +197,18 @@
                         balloonContentBody: "ул. Свердловская 15<br>" +
                                 "т. 233-55-00<br>т. 250-00-58<br>",
                     });
-                    myPlacemark2 = new ymaps.Placemark([56.052108, 92.836517], {
+
+
+                    myPlacemark3 = new ymaps.Placemark([56.057443, 92.835720], {
                         // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
                         balloonContentHeader: "Левый берег",
                         balloonContentBody: "п.Солонцы<br>" +
-                                "пр. Котельникова 9, строение 1<br>" +
-                                "Парковка ТК \"Сибирский городок\"<br>(Бывший АлпиСити)<br>" +
-                                "т. 208-51-51",
+                                "Котельникова 5в<br>" +
+                                "т. 280-00-85<br>т. 208-51-51",
                     });
 
                     myMap.geoObjects.add(myPlacemark1);
-                    myMap.geoObjects.add(myPlacemark2);
+                    myMap.geoObjects.add(myPlacemark3);
 
                     myMap.controls.add('zoomControl');
                 }
